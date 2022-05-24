@@ -12,8 +12,6 @@
 	// Set *default* container specific settings.json values on container create.
 	"settings": {},
 	"onCreateCommand": "echo $USER",
-	"postStartCommand": "yarn && echo $USER",
-	"postAttachCommand": "echo HELLO",
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [],
