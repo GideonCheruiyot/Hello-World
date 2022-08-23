@@ -12,6 +12,11 @@
 	// Set *default* container specific settings.json values on container create.
 	"settings": {},
 	"onCreateCommand": "echo $USER",
+	"postAttachCommand": "echo $USER > foo.txt",
+	"postCreateCommand": "echo $USER > foo.txt",
+	"postStartCommand": "echo $USER > foo.txt",
+	"updateContentCommand": "echo $USER > foo.txt",
+
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [],
