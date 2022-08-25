@@ -13,10 +13,11 @@
 	},
 	// Set *default* container specific settings.json values on container create.
 	"settings": {},
-	"postAttachCommand": "echo hello >> foo.txt",
-	"postStartCommand": "echo hello >> foo.txt",
-	"updateContentCommand": "echo hello >> foo.txt",
-	"onCreateCommand": "echo hello >> foo.txt",
+	"onCreateCommand": "echo $USER",
+	"updateContentCommand": "echo $USER",
+	"postCreateCommand": "echo $USER",
+	"postStartCommand": "echo $USER",
+	"postAttachCommand": "echo $USER",
 	"waitFor": "updateContentCommand",
 
 
