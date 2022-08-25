@@ -14,6 +14,10 @@
 	// Set *default* container specific settings.json values on container create.
 	"settings": {},
 	"postAttachCommand": "echo hello >> foo.txt",
+	"postStartCommand": "echo hello >> foo.txt",
+	"updateContentCommand": "echo hello >> foo.txt",
+	"onCreateCommand": "echo hello >> foo.txt",
+	"waitFor": "updateContentCommand",
 
 
 	// Add the IDs of extensions you want installed when the container is created.
